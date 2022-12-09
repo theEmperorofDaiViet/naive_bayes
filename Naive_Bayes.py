@@ -4,13 +4,14 @@ class Gaussian_Naive_Bayes():
     def fit(self, X, y):
         self.n_samples, self.n_features = X.shape
         self.n_classes = len(np.unique(y))
+        self.classes = np.unique(y)
         
         self.mean = np.zeros((self.n_classes, self.n_features))
         self.variance = np.zeros((self.n_classes, self.n_features))
         self.priors = np.zeros(self.n_classes)
         
         for c in range(self.n_classes):
-            X_c = X[y == c]
+            X_c = X[y == self.classes[c]]
             self.mean[c, :] = np.mean(X_c, axis = 0)
             self.variance[c, :] = np.var(X_c, axis = 0)
             self.priors[c] = X_c.shape[0] / self.n_samples
