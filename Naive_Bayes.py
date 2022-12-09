@@ -32,7 +32,7 @@ class Gaussian_Naive_Bayes():
             posterior = prior + posterior
             posteriors.append(posterior)
         
-        return np.argmax(posteriors)
+        return self.classes[np.argmax(posteriors)]
 
     def predict(self, X):
         y_hat = [self.class_probability(x) for x in X]
