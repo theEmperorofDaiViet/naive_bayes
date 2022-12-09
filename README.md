@@ -60,6 +60,11 @@ fit(X, y)
 ```
 <p align="right">[<a href="/Naive_Bayes.py#fit">source</a>]</p>
 
+```python
+gaussian_density(x, mean, var)
+```
+<p align="right">[<a href="/Naive_Bayes.py#gaussian_density">source</a>]</p>
+
 
 ## Usage
 
