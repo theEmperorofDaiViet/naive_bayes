@@ -158,7 +158,47 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 
 In this example, I use the dry bean dataset from [Kaggle](https://www.kaggle.com/datasets/muratkokludataset/dry-bean-dataset).
 
+## Import libraries, modules and load data
+![import & load](/images/1.png)
+The <code>correctness</code> module I import is my other built-from-scratch module. It's used for evaluating the performance of classification models. You'll see it's effect below, or you can take a look at it [here](https://github.com/theEmperorofDaiViet/correctness).
 
+```python
+>>> from Naive_Bayes import Gaussian_Naive_Bayes
+>>> import correctness
+>>> import pandas as pd
+>>> import numpy as np
+>>> from sklearn.model_selection import train_test_split
+
+>>> df = pd.read_excel('Dry_Bean_Dataset.xlsx')
+>>> df.shape
+(13611, 17)
+```
+## Perform classification and evaluate the model performance
+
+```python
+>>> nb = Gaussian_Naive_Bayes()
+>>> nb.fit(X_train, y_train)
+>>> y_pred = nb.predict(X_test)
+
+>>> cm = correctness.confusion_matrix(y_test, y_pred)
+>>> scratch = correctness.accuracy(cm)
+>>> print(correctness.report(cm))
+CLASSIFICATION REPORT:
+   precision    recall  f1-score  support
+0   0.814394  0.911017  0.860000      264
+1   1.000000  1.000000  1.000000      106
+2   0.920245  0.874636  0.896861      326
+3   0.879501  0.940741  0.909091      722
+4   0.964770  0.922280  0.943046      369
+5   0.957286  0.929268  0.943069      398
+6   0.866171  0.821869  0.843439      538
+          precision    recall  f1-score  support
+                                                
+macro      0.914624  0.914259  0.913644     2723
+micro      0.903048  0.903048  0.903048     2723
+weighted   0.904705  0.903048  0.903094     2723
+accuracy    0.903048
+```
 
 # Contact
 
