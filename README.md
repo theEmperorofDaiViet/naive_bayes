@@ -154,6 +154,9 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 </table><br/>
 
 # Usage
+<p style="font-size: 1.17em;"><i>Here is an example of how this module can be used to perform data classification.</i></p>
+
+In this example, I use the dry bean dataset from [Kaggle](https://www.kaggle.com/datasets/muratkokludataset/dry-bean-dataset).
 
 
 
