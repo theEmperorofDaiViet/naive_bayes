@@ -252,12 +252,29 @@ accuracy    0.901579
 <p style="margin-left: 2.5%">As you can see, the accuracy of two models using my "<b><i>scratch</i></b>" <code>Gaussian_Naive_Bayes</code> and using the <b><i>sklearn</i></b>'s <code>GaussianNB</code> are approximately the same. And with little luck, my module's accuracy is slightly higher.</p><br/>
 
 # Contact
-
+You can contact me via:
+* [![GitHub][GitHub-shield]][GitHub-url]
+* [![LinkedIn][LinkedIn-shield]][LinkedIn-url]
+* ![Gmail][Gmail-shield]:<i>Khiet.To.05012001@gmail.com</i>
+* [![Facebook][Facebook-shield]][Facebook-url]
+* [![Twitter][Twitter-shield]][Twitter-url]
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+<!-- Tech stack -->
 [Numpy-shield]: https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white
 [Numpy-url]: https://numpy.org
+
+<!-- Contact -->
+[GitHub-shield]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[GitHub-url]: https://github.com/theEmperorofDaiViet
+[LinkedIn-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
+[LinkedIn-url]: https://www.linkedin.com/in/khiet-to/
+[Gmail-shield]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+[Facebook-shield]: https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white
+[Facebook-url]: https://www.facebook.com/Khiet.To.Official/
+[Twitter-shield]: https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
+[Twitter-url]: https://twitter.com/KhietTo
 <style>
 table, th, td {
   border: 1px solid black;
