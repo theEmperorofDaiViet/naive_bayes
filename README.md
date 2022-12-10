@@ -1,4 +1,3 @@
-markdown: kramdown
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -279,7 +278,7 @@ You can contact me via:
 [Twitter-url]: https://twitter.com/KhietTo
 
 ### Style Sheets
-Github's markdown processor cannot render ```<style>``` sheets, so you may see it lying here. You can read this file with the best experience by using other text editor, e.g. <b>Visual Studio Code</b>'s Open Preview mode (Ctrl+Shift+V)
+Github's markdown processor cannot render ```<style>``` sheets, so you may see it lying here:
 <style>
 table, th, td {
   border: 1px solid black;
@@ -295,3 +294,5 @@ mark {
   color: black;
 }
 </style>
+<br/>
+You can read this file with the best experience by using other text editor, e.g. <b>Visual Studio Code</b>'s Open Preview mode (Ctrl+Shift+V)
