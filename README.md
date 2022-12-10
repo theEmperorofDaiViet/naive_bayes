@@ -32,7 +32,7 @@ This is a part of my Introduction to Data Science's assignment at university. In
 
 * [![Numpy][Numpy-shield]][Numpy-url]
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Getting Started
 
@@ -48,6 +48,7 @@ You can install this module by cloning this repository into your current working
 ```sh
 git clone https://github.com/theEmperorofDaiViet/naive_bayes.git
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # API Documentation
 The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervised learning methods based on applying Bayes’ theorem with strong (naive) feature independence assumptions.
@@ -84,7 +85,7 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
   <pre><code>gaussian_density(x, mean, var)</code><span style="float:right;">[<a href="https://github.com/theEmperorofDaiViet/naive_bayes/blob/master/Naive_Bayes.py#L19">source</a>]</span></pre>
 </p>
 
-<p style="margin-left: 2.5%">Calculate the probabilit(ies) density function of Gaussian distribution for a give sample, knowing the mean(s) and the variance(s).</p>
+<p style="margin-left: 2.5%">Calculate the probabiliti(es) density function of Gaussian distribution for a give sample, knowing the mean(s) and the variance(s).</p>
 
 <table style="width: 97.5%; margin-left: 2.5%">
   <tr>
@@ -152,6 +153,8 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
     </td>
   </tr>
 </table><br/>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Usage
 <p style="font-size: 1.17em;"><i>Here is an example of how this module can be used to perform data classification.</i></p>
@@ -251,6 +254,8 @@ accuracy    0.901579
 ```
 <p style="margin-left: 2.5%">As you can see, the accuracy of two models using my "<b><i>scratch</i></b>" <code>Gaussian_Naive_Bayes</code> and using the <b><i>sklearn</i></b>'s <code>GaussianNB</code> are approximately the same. And with little luck, my module's accuracy is slightly higher.</p><br/>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Contact
 You can contact me via:
 * [![GitHub][GitHub-shield]][GitHub-url]
@@ -260,6 +265,7 @@ You can contact me via:
 * [![Twitter][Twitter-shield]][Twitter-url]
 
 <br/>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- Tech stack -->
