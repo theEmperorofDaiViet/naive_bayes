@@ -1,3 +1,4 @@
+markdown: kramdown
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -247,7 +248,7 @@ accuracy    0.901579
 >>> Naive_Bayes_report.columns = ['sklearn NB', 'scratch NB']
 >>> Naive_Bayes_report
   sklearn NB	scratch NB
-  0.901579	    0.903048
+  0.901579	  0.903048
 ```
 <p style="margin-left: 2.5%">As you can see, the accuracy of two models using my "<b><i>scratch</i></b>" <code>Gaussian_Naive_Bayes</code> and using the <b><i>sklearn</i></b>'s <code>GaussianNB</code> are approximately the same. And with little luck, my module's accuracy is slightly higher.</p><br/>
 
@@ -259,6 +260,7 @@ You can contact me via:
 * [![Facebook][Facebook-shield]][Facebook-url]
 * [![Twitter][Twitter-shield]][Twitter-url]
 
+<br/>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- Tech stack -->
@@ -275,6 +277,9 @@ You can contact me via:
 [Facebook-url]: https://www.facebook.com/Khiet.To.Official/
 [Twitter-shield]: https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white
 [Twitter-url]: https://twitter.com/KhietTo
+
+### Style Sheets
+Github's markdown processor cannot render ```<style>``` sheets, so you may see it lying here. You can read this file with the best experience by using other text editor, e.g. <b>Visual Studio Code</b>'s Open Preview mode (Ctrl+Shift+V)
 <style>
 table, th, td {
   border: 1px solid black;
