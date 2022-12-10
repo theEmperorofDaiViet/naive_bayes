@@ -56,14 +56,15 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 Gaussian Naive Bayes
 
 ```python
-fit(X, y)
+fit(X, y)   
 ```
-<p align="right">[<a href="/Naive_Bayes.py#fit">source</a>]</p>
+<p align="right">[<a href="/Naive_Bayes.py#L4">source</a>]</p>
+
 
 ```python
 gaussian_density(x, mean, var)
 ```
-<p align="right">[<a href="/Naive_Bayes.py#gaussian_density">source</a>]</p>
+<p align="right">[<a href="/Naive_Bayes.py#L19">source</a>]</p>
 
 
 ## Usage
