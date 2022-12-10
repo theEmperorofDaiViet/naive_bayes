@@ -159,8 +159,6 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 In this example, I use the dry bean dataset from [Kaggle](https://www.kaggle.com/datasets/muratkokludataset/dry-bean-dataset).
 
 ## Import libraries, modules and load data
-![import & load](/images/1.png)
-The <code>correctness</code> module I import is my other built-from-scratch module. It's used for evaluating the performance of classification models. You'll see it's effect below, or you can take a look at it [here](https://github.com/theEmperorofDaiViet/correctness).
 
 ```python
 >>> from Naive_Bayes import Gaussian_Naive_Bayes
@@ -173,7 +171,21 @@ The <code>correctness</code> module I import is my other built-from-scratch modu
 >>> df.shape
 (13611, 17)
 ```
-## Perform classification and evaluate the model performance
+<p style="margin-left: 2.5%">The <code>correctness</code> module I import is my other built-from-scratch module. It's used for evaluating the performance of classification models. You'll see it's effect below, or you can take a look at it <a href="https://github.com/theEmperorofDaiViet/correctness">here</a>.</p>
+
+## Preprocess and split data
+
+```python
+>>> data = df.drop(['ConvexArea','EquivDiameter','AspectRation','Eccentricity','Class','Area','Perimeter','ShapeFactor2','ShapeFactor3','ShapeFactor1','ShapeFactor4'],axis = 1)
+>>> target = df['Class']
+
+>>> X = np.array(data)
+>>> y = np.array(target)
+
+>>> X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+```
+
+## Perform classification using this module and evaluate the model performance
 
 ```python
 >>> nb = Gaussian_Naive_Bayes()
@@ -199,6 +211,45 @@ micro      0.903048  0.903048  0.903048     2723
 weighted   0.904705  0.903048  0.903094     2723
 accuracy    0.903048
 ```
+
+## Perform classification but using sklearn.naive_bayes.GaussianNB and evaluate the model performance
+
+```python
+>>> from sklearn.naive_bayes import GaussianNB
+
+>>> sknb = GaussianNB()
+>>> sknb.fit(X_train, y_train)
+>>> y_sk = sknb.predict(X_test)
+
+>>> skcm = correctness.confusion_matrix(y_test, y_sk)
+>>> sklearn = correctness.accuracy(skcm)
+>>> print(correctness.report(skcm))
+CLASSIFICATION REPORT:
+   precision    recall  f1-score  support
+0   0.814394  0.907173  0.858283      264
+1   1.000000  1.000000  1.000000      106
+2   0.920245  0.879765  0.899550      326
+3   0.876731  0.939169  0.906877      722
+4   0.964770  0.924675  0.944297      369
+5   0.957286  0.927007  0.941904      398
+6   0.862454  0.815466  0.838302      538
+          precision    recall  f1-score  support
+                                                
+macro      0.913697  0.913322  0.912745     2723
+micro      0.901579  0.901579  0.901579     2723
+weighted   0.903176  0.901579  0.901603     2723
+accuracy    0.901579 
+```
+## Compare the accuracy of two models:
+
+```python
+>>> Naive_Bayes_report = pd.DataFrame([[sklearn, scratch]])
+>>> Naive_Bayes_report.columns = ['sklearn NB', 'scratch NB']
+>>> Naive_Bayes_report
+  sklearn NB	scratch NB
+  0.901579	    0.903048
+```
+<p style="margin-left: 2.5%">As you can see, the accuracy of two models using my "<b><i>scratch</i></b>" <code>Gaussian_Naive_Bayes</code> and using the <b><i>sklearn</i></b>'s <code>GaussianNB</code> are approximately the same. And with little luck, my module's accuracy is slightly higher.</p><br/>
 
 # Contact
 
