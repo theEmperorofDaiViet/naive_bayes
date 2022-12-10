@@ -57,7 +57,7 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 <p style="font-size: 1.17em;"><i>This model is mainly used when dealing with continuous data.</i></p>
 
 <p style="text-align:left;">
-  <pre><code>fit(X, y)</code><span style="float:right;">[<a href="/Naive_Bayes.py#L4">source</a>]</span></pre>
+  <pre><code>fit(X, y)</code><span style="float:right;">[<a href="https://github.com/theEmperorofDaiViet/naive_bayes/blob/master/Naive_Bayes.py#L4">source</a>]</span></pre>
 </p>
 
 <p style="margin-left: 2.5%">Fit Gaussian Naive Bayes according to X, y.</p>
@@ -81,7 +81,7 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 </table><br/>
 
 <p style="text-align:left;">
-  <pre><code>gaussian_density(x, mean, var)</code><span style="float:right;">[<a href="/Naive_Bayes.py#L19">source</a>]</span></pre>
+  <pre><code>gaussian_density(x, mean, var)</code><span style="float:right;">[<a href="https://github.com/theEmperorofDaiViet/naive_bayes/blob/master/Naive_Bayes.py#L19">source</a>]</span></pre>
 </p>
 
 <p style="margin-left: 2.5%">Calculate the probabilit(ies) density function of Gaussian distribution for a give sample, knowing the mean(s) and the variance(s).</p>
@@ -108,7 +108,7 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 </table><br/>
 
 <p style="text-align:left;">
-  <pre><code>class_probability(x)</code><span style="float:right;">[<a href="/Naive_Bayes.py#L24">source</a>]</span></pre>
+  <pre><code>class_probability(x)</code><span style="float:right;">[<a href="https://github.com/theEmperorofDaiViet/naive_bayes/blob/master/Naive_Bayes.py#L24">source</a>]</span></pre>
 </p>
 
 <p style="margin-left: 2.5%">Calculate the probabilities of a given sample to belong to each class, then choose the class with maximum probability.</p>
@@ -131,7 +131,7 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
 </table><br/>
 
 <p style="text-align:left;">
-  <pre><code>predict(X)</code><span style="float:right;">[<a href="/Naive_Bayes.py#L37">source</a>]</span></pre>
+  <pre><code>predict(X)</code><span style="float:right;">[<a href="https://github.com/theEmperorofDaiViet/naive_bayes/blob/master/Naive_Bayes.py#L37">source</a>]</span></pre>
 </p>
 
 <p style="margin-left: 2.5%">Perform classification on an array of test vectors X.</p>
