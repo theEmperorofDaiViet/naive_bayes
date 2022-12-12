@@ -69,9 +69,9 @@ The **Naive_Bayes** module implements Naive Bayes algorithms. These are supervis
     <th>Parameters</th>
     <td>
       <b>X: <i>np.array of shape (n_samples, n_features)</i></b><br/>
-      <p style="margin-left: 2.5%">Training vectors, where <mark>n_samples</mark> is the number of samples and <mark>n_features</mark> is the number of features.</p>
+      <p style="margin-left: 2.5%">Training vectors, where <b>n_samples</b> is the number of samples and <b>n_features</b> is the number of features.</p>
       <b>y: <i>np.array of shape (n_samples)</i></b><br/>
-      <p style="margin-left: 2.5%">Target values.</p><br/>
+      <p style="margin-left: 2.5%">Target values.</p>
     </td>
   </tr>
   <tr>
