@@ -261,7 +261,7 @@ accuracy    0.901579
 You can contact me via:
 * [![GitHub][GitHub-shield]][GitHub-url]
 * [![LinkedIn][LinkedIn-shield]][LinkedIn-url]
-* ![Gmail][Gmail-shield]:<i>Khiet.To.05012001@gmail.com</i>
+* ![Gmail][Gmail-shield]:&nbsp;<i>Khiet.To.05012001@gmail.com</i>
 * [![Facebook][Facebook-shield]][Facebook-url]
 * [![Twitter][Twitter-shield]][Twitter-url]
 
